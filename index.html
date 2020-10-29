@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
     integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
   <title>Portfolio</title>
@@ -54,41 +55,90 @@
     <div class="bottom" id="bottom">
 
       <div class="container-grid" id="projects">
-        <div class="post project-1 project-tile">
+        <div data-aos="fade-right" class="project">
+          <a href="https://goglichidzemike.github.io/Calculator/" target="_blank">
+            <img src="./img/calc.png"
+              alt="React Calculator">
+          </a>
+            <a href="https://goglichidzemike.github.io/Calculator/" target="_blank">
+              <button>Calculator React</button>
+            </a>
+        </div>
+         <div data-aos="zoom-in" class="project">
+          <a href="https://goglichidzemike.github.io/DrumMachine/" target="_blank">
+            <img src="./img/drum.png"
+              alt="Drum Machine React">
+          </a>
+            <a href="https://goglichidzemike.github.io/DrumMachine/" target="_blank">
+              <button>Drum Machine React</button>
+            </a>
+        </div>
+         <div data-aos="fade-left" class="project">
+          <a href="https://goglichidzemike.github.io/maze-builder/" target="_blank">
+            <img src="./img/maze.png"
+              alt="Maze Generator p5.js">
+          </a>
+            <a href="https://goglichidzemike.github.io/maze-builder/" target="_blank">
+              <button>Maze Generator p5.js</button>
+            </a>
+        </div>
+      </div>
+      <div class="container-grid" id="projects">
+        <div  data-aos="fade-right" class="project">
           <a href="https://codepen.io/mika-l-goglichidze/full/zYrBMwe" target="_blank">
-            <img src="https://assets.codepen.io/4642375/internal/screenshots/pens/zYrBMwe.default.png"
-              alt="Nikola Tesla Tribute Page">
-            <div class="title">
-              <h2>Js Technical Documentation</h2>
-            </div>
+            <img src="./img/technical.png"
+              alt="Js Technical Documentation">
           </a>
+            <a href="https://codepen.io/mika-l-goglichidze/full/zYrBMwe" target="_blank">
+              <button>Js Technical Documentation</button>
+            </a>
         </div>
-        <div class="post project-2">
-          <a href="https://codepen.io/mika-l-goglichidze/full/ZEQORpe" target="_blank">
-            <img src="https://assets.codepen.io/4642375/internal/screenshots/pens/ZEQORpe.default.png"
-              alt="Nikola Tesla Tribute Page">
-            <div class="title">
-              <h2>Product Landing Page</h2>
-            </div>
-          </a>
-        </div>
-        <div class="post project-3">
+         <div data-aos="zoom-in" class="project">
           <a href="https://codepen.io/mika-l-goglichidze/full/PoZNReO" target="_blank">
-            <img src="https://assets.codepen.io/4642375/internal/screenshots/pens/PoZNReO.default.png"
+            <img src="./img/gamers.png"
               alt="Nikola Tesla Tribute Page">
-            <div class="title">
-              <h2>Gaming Forms Page</h2>
-            </div>
           </a>
+            <a href="https://codepen.io/mika-l-goglichidze/full/PoZNReO" target="_blank">
+              <button>Forms Validator Page</button>
+            </a>
         </div>
-        <div class="post project-4">
+         <div data-aos="fade-left" class="project">
           <a href="https://codepen.io/mika-l-goglichidze/full/MWKyQRG" target="_blank">
-            <img src="https://assets.codepen.io/4642375/internal/screenshots/pens/MWKyQRG.default.png"
+            <img src="./img/nikola.png"
               alt="Nikola Tesla Tribute Page">
-            <div class="title">
-              <h2>Nikola Tesla Tribute</h2>
-            </div>
           </a>
+            <a href="https://codepen.io/mika-l-goglichidze/full/MWKyQRG" target="_blank">
+              <button>Nikola Tesla Tribute Page</button>
+            </a>
+        </div>
+      </div>
+      <div class="container-grid" id="projects">
+        <div data-aos="fade-right" class="project">
+          <a href="https://goglichidzemike.github.io/random-quote/" target="_blank">
+            <img src="./img/quotes.png"
+              alt="Random Quotes Generator">
+          </a>
+            <a href="https://goglichidzemike.github.io/random-quote/" target="_blank">
+              <button>Rnd Quotes API</button>
+            </a>
+        </div>
+         <div data-aos="zoom-in" class="project">
+          <a href="https://codepen.io/mika-l-goglichidze/full/abdEOmL" target="_blank">
+            <img src="./img/markdown.png"
+              alt="Markdown Generator">
+          </a>
+            <a href="https://codepen.io/mika-l-goglichidze/full/abdEOmL" target="_blank">
+              <button>Markdown Generator</button>
+            </a>
+        </div>
+         <div data-aos="fade-left" class="project">
+          <a href="/index.html" target="_blank">
+            <img src="./img/portfolio.png"
+              alt="Web Developer Portfolio">
+          </a>
+            <a href="/index.html" target="_blank">
+              <button>This Portfolio</button>
+            </a>
         </div>
       </div>
 
@@ -103,7 +153,10 @@
 
     </div>
   </div>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
 </body>
 
